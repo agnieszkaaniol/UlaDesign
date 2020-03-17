@@ -629,7 +629,7 @@ p {
 .right,
 .come-back,
 .go-up {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;
@@ -648,23 +648,24 @@ p {
 }
 
 footer {
-    width: 100vw;
+    width: 90vw;
     background-color: var(--white);
     opacity: .9;
 }
 
 footer ul {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     position: sticky;
     text-decoration: none;
     list-style: none;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 footer li {
-    padding: 0.4rem;
+    padding: 0.3rem;
 }
 
 footer li a {

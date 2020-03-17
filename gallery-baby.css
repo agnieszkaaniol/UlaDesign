@@ -472,7 +472,7 @@ body {
 }
 
 .baby-name {
-    width: 40vw;
+    width: 30vw;
     height: auto;
 }
 
@@ -554,7 +554,7 @@ body {
 
 .go-up,
 .come-back {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;

@@ -492,13 +492,13 @@ body {
 }
 
 footer {
-    width: 100vw;
+    width: 90vw;
     background-color: var(--white);
     opacity: .9;
 }
 
 footer ul {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     position: sticky;
     text-decoration: none;
@@ -508,7 +508,7 @@ footer ul {
 }
 
 footer li {
-    padding: 0.4rem;
+    padding: 0.3rem;
 }
 
 footer li a {

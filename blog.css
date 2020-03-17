@@ -530,14 +530,14 @@ body {
 }
 
 .article-pic {
-    width: 40vw;
+    width: 30vw;
     height: auto;
     padding: 1rem;
     padding-bottom: 0;
 }
 
 .article-text {
-    width: 40vw;
+    width: 30vw;
     line-height: 1.2rem;
     overflow: hidden;
     font-size: .9rem;

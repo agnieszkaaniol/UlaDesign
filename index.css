@@ -693,7 +693,7 @@ input[type=checkbox]:checked + label:before {
  }
 
  .go-up {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;
@@ -706,13 +706,14 @@ input[type=checkbox]:checked + label:before {
 }
 
 footer {
-    width: 100vw;
+    width: 90vw;
+    margin: auto;
     background-color: var(--white);
     opacity: .9;
 }
 
   footer ul {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     position: sticky;
     text-decoration: none;
