@@ -333,11 +333,13 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px auto auto;
+    grid-template-rows: 100px 100px auto auto auto auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
     "choice"
+    "pictures-gallery"
+    "back"
     "footer";
 }
 
@@ -452,7 +454,8 @@ body {
     text-decoration: none;
 }
 
-.choice {
+.choice,
+.pictures-gallery {
     width: 90vw;
     margin-right: 3rem;
 }
@@ -463,9 +466,11 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
+    flex-flow: wrap;
     align-items: center;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
+    cursor: url('icons/clickgrey.png'), auto;
 }
 
 .image-angel,
@@ -474,31 +479,68 @@ body {
     width: 80vw;
     height: auto;
     margin-bottom: 2rem;
-    align-self: center;
 }
 
-.image-angel:active,
-.image-angel:hover,
-.image-baby:active,
-.image-baby:hover {
-    opacity: 1;
+.choice-baby-list,
+.choice-angel-list {
+    flex-flow: wrap;
+    width: 90vw;
+    list-style: none;
+    display: flex;
+}
+
+.choice-baby,
+.choice-angel {
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.baby-name,
+.angel-name {
+    width: 30vw;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.baby-name:hover,
+.baby-name:active,
+.angel-name:hover,
+.angel-name:active {
+    transform: scale( 1.05);
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    transition: all .4s;
     cursor: url('icons/clickgrey.png'), auto;
-    -webkit-user-select: none;
-    user-select: none;
 }
   
 .text {
     opacity: 0;
 }
 
+.go-up {
+    width: 40px;
+    height: auto;
+    margin: 1rem;
+    cursor: url('icons/clickgrey.png'), auto;
+}
+
+.go-up:hover,
+.go-up:active {
+    opacity: .4;
+    transition: all .2s ease-in-out .2s;
+}
+
 footer {
-    width: 90vw;
+    width: 100vw;
     background-color: var(--white);
     opacity: .9;
 }
 
 footer ul {
-    width: 90vw;
+    width: 100vw;
     display: flex;
     position: sticky;
     text-decoration: none;
@@ -508,7 +550,7 @@ footer ul {
 }
 
 footer li {
-    padding: 0.3rem;
+    padding: 0.4rem;
 }
 
 footer li a {
@@ -529,11 +571,13 @@ footer p {
         width: 100vw;
         /* margin: 0; */
         display: grid;
-        grid-template-rows: 100px 100px auto auto;
+        grid-template-rows: 100px 100px auto auto auto auto;
         grid-template-areas: 
         "logo-lang"
         "navigation"
         "choice"
+        "pictures-gallery"
+        "back"
         "footer";
     }
 
@@ -548,9 +592,58 @@ footer p {
         top: 1vh;
     }
 
-    .choice {
+    .choice,
+    .pictures-gallery {
         width: 90vw;
+        margin-right: 3rem;
+    }
+
+    .main-choice-baby,
+    .main-choice-angel {
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
         margin: auto;
+        justify-content: space-around;
+    }
+
+     .image-angel,
+     .image-baby {
+        display: block;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+     .choice-baby-list,
+     .choice-angel-list {
+        flex-flow: wrap;
+        width: 90vw;
+        list-style: none;
+        display: flex;
+    }
+
+     .choice-baby,
+     .choice-angel {
+      align-items: center;
+      margin: auto;
+      justify-content: space-around;
+    }
+
+    .baby-name,
+    .angel-name {
+      width: 40vw;
+      height: auto;
+      margin-bottom: 1rem;
+      cursor: url('icons/clickgrey.png'), auto;
+    }
+
+
+    .choice {
+      margin-left: 4rem;
     }
 
     .gallery-choice {
@@ -560,12 +653,8 @@ footer p {
     .main-choice-baby,
     .main-choice-angel {
         position: relative;
-        display: flex;
-        flex-direction: column;
         width: 50%;
         list-style: none;
-        justify-content: center;
-        align-items: center;
     }
     
     .image-angel,
@@ -573,8 +662,6 @@ footer p {
         display: block;
         width: 40vw;
         height: auto;
-        margin-bottom: 2rem;
-        align-self: center;
     }
     
     .overlay {
@@ -593,7 +680,7 @@ footer p {
     .main-choice-baby:hover .overlay,
     .main-choice-angel:hover .overlay,
     .main-choice-baby:active .overlay,
-    .main-choice-angel:active .overlay {
+    .main-choicangel:active .overlay {
         opacity: 1;
         cursor: url('icons/clickgrey.png'), auto;
         -webkit-user-select: none;
@@ -611,6 +698,32 @@ footer p {
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
+    }
+
+    .pictures-gallery {
+        margin-left: 3rem;
+    }
+
+    .choice-baby-list,
+    .choice-angel-list {
+        flex-flow: wrap;
+        width: 90vw;
+        list-style: none;
+        display: flex;
+    }
+
+    .choice-baby,
+    .choice-angel {
+       align-items: center;
+       margin: auto;
+       justify-content: space-around;
+    }
+
+   .baby-name,
+   .angel-name {
+       width: 28vw;
+       height: auto;
+       margin-bottom: 1rem;
     }
 
     .btn-toggle {
@@ -682,6 +795,10 @@ footer p {
 
     nav a:hover {
         color: var(--grey);
+    }
+
+    .go-up {
+        width: 60px;
     }
 
     footer li {

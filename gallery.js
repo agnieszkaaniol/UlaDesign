@@ -24,33 +24,6 @@ window.onload = () => {
         }, false);
     }
 
-    let screenWidth = document.querySelector('.choice').getBoundingClientRect().width,
-    angel = document.querySelector('.image-angel'),
-    baby = document.querySelector('.image-baby');
-
-    if (screenWidth < 769) {
-        angel.src = "img/AnieliceM.png";
-        baby.src = "img/MaluszkiM.png";
-    } else {
-        angel.src = "img/AnieliceD.png";
-        baby.src = "img/MaluszkiD.png";
-    }
-
-    window.addEventListener("resize", () => {
-
-        screenWidth = document.querySelector('.choice').getBoundingClientRect().width;
-        let angel = document.querySelector('.image-angel'),
-        baby = document.querySelector('.image-baby');
-
-        if (screenWidth < 769) {
-            angel.src = "img/AnieliceM.png";
-            baby.src = "img/MaluszkiM.png";
-        } else {
-            angel.src = "img/AnieliceD.png";
-            baby.src = "img/MaluszkiD.png";
-        }
-    });
-
     window.addEventListener('scroll', (e) => {
         let menu = document.querySelectorAll('.navv')[0],
             logoHeight = document.querySelector('.logo').height,
@@ -67,7 +40,7 @@ window.onload = () => {
             menu.style.position = 'relative';
             menuFixed = false;
         }
-    })
+    });
 
     let sidebarNavStatus = false;
 

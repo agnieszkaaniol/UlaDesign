@@ -7,8 +7,8 @@ window.onload = () => {
         logo = document.querySelector('.logo');
 
     let imgHeight = document.querySelector('.main-background').getBoundingClientRect().height,
-        mountainsPic = document.querySelector('.main-mountains'),
-        imgWidth = document.querySelector('.main-mountains').getBoundingClientRect().width,
+        mountainsPic = document.querySelector('.main-forest'),
+        imgWidth = document.querySelector('.main-forest').getBoundingClientRect().width,
         menuFixed = false,
         sidebarNavStatus = false;
 
@@ -28,7 +28,7 @@ window.onload = () => {
     window.addEventListener("resize", () => {
 
         imgHeight = document.querySelector('.main-background').getBoundingClientRect().height;
-        imgWidth = document.querySelector('.main-mountains').getBoundingClientRect().width;
+        imgWidth = document.querySelector('.main-forest').getBoundingClientRect().width;
 
         if (imgWidth < 769) {
                 mountainsPic.src = "img/BgM.png",
@@ -144,19 +144,19 @@ window.onload = () => {
     for (let lh of langHover) {
         lh.addEventListener('mouseover', (event) => {
             setTimeout(() => {
-                event.target.style.color = "white";
+                event.target.style.color = "grey";
             }, 70, event);
         }, false);
 
         lh.addEventListener('click', (event) => {
             setTimeout(() => {
-                event.target.style.color = "grey";
+                event.target.style.color = "black";
             }, 100, event);
         }, false);
 
         lh.addEventListener('mouseout', (event) => {
             setTimeout(() => {
-                event.target.style.color = "black";
+                event.target.style.color = "white";
             }, 100, event);
         }, false);
     }
