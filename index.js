@@ -12,9 +12,6 @@ window.onload = () => {
         menuFixed = false,
         sidebarNavStatus = false;
 
-        // function bgOpacity = 
-        // backgroundPic.style.opacity = 0.6;
-
 
     // changing src code
 
@@ -177,6 +174,13 @@ window.onload = () => {
     close.onclick = () => {
         modal.style.display = "none";
     }
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      } 
+      
 }
 
 

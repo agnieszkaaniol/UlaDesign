@@ -460,7 +460,6 @@ body {
     margin-right: 3rem;
 }
 
-.main-choice-baby,
 .main-choice-angel {
     position: relative;
     list-style: none;
@@ -473,15 +472,13 @@ body {
     cursor: url('icons/clickgrey.png'), auto;
 }
 
-.image-angel,
-.image-baby {
+.image-angel {
     display: block;
     width: 80vw;
     height: auto;
     margin-bottom: 2rem;
 }
 
-.choice-baby-list,
 .choice-angel-list {
     flex-flow: wrap;
     width: 90vw;
@@ -489,22 +486,18 @@ body {
     display: flex;
 }
 
-.choice-baby,
 .choice-angel {
     align-items: center;
     margin: auto;
     justify-content: space-around;
 }
 
-.baby-name,
 .angel-name {
-    width: 30vw;
+    width: 35vw;
     height: auto;
     margin-bottom: 1rem;
 }
 
-.baby-name:hover,
-.baby-name:active,
 .angel-name:hover,
 .angel-name:active {
     transform: scale( 1.05);
@@ -521,8 +514,8 @@ body {
 }
 
 .go-up {
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 40px;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
@@ -598,7 +591,6 @@ footer p {
         margin-right: 3rem;
     }
 
-    .main-choice-baby,
     .main-choice-angel {
         position: relative;
         list-style: none;
@@ -610,15 +602,13 @@ footer p {
         justify-content: space-around;
     }
 
-     .image-angel,
-     .image-baby {
+     .image-angel {
         display: block;
         width: 80vw;
         height: auto;
         margin-bottom: 2rem;
     }
-
-     .choice-baby-list,
+,
      .choice-angel-list {
         flex-flow: wrap;
         width: 90vw;
@@ -626,14 +616,12 @@ footer p {
         display: flex;
     }
 
-     .choice-baby,
      .choice-angel {
       align-items: center;
       margin: auto;
       justify-content: space-around;
     }
 
-    .baby-name,
     .angel-name {
       width: 40vw;
       height: auto;
@@ -650,61 +638,22 @@ footer p {
         display: flex;
     }
 
-    .main-choice-baby,
     .main-choice-angel {
         position: relative;
         width: 50%;
         list-style: none;
     }
     
-    .image-angel,
-    .image-baby {
+    .image-angel {
         display: block;
         width: 40vw;
         height: auto;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(254, 254, 254, .4);
-    }
-    
-    .main-choice-baby:hover .overlay,
-    .main-choice-angel:hover .overlay,
-    .main-choice-baby:active .overlay,
-    .main-choicangel:active .overlay {
-        opacity: 1;
-        cursor: url('icons/clickgrey.png'), auto;
-        -webkit-user-select: none;
-        user-select: none;
-      }
-      
-    .text {
-        opacity: 1;
-        color: var(--grey);
-        font-family: 'Aurelia';
-        font-size: 5rem;
-        text-shadow: var(--white) .8px .8px 0.8px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
     }
 
     .pictures-gallery {
         margin-left: 3rem;
     }
 
-    .choice-baby-list,
     .choice-angel-list {
         flex-flow: wrap;
         width: 90vw;
@@ -712,14 +661,12 @@ footer p {
         display: flex;
     }
 
-    .choice-baby,
     .choice-angel {
        align-items: center;
        margin: auto;
        justify-content: space-around;
     }
 
-   .baby-name,
    .angel-name {
        width: 28vw;
        height: auto;
@@ -798,7 +745,8 @@ footer p {
     }
 
     .go-up {
-        width: 60px;
+        width: auto;
+        height: 60px;
     }
 
     footer li {

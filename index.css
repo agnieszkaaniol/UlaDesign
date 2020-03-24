@@ -54,7 +54,23 @@ body {
     position: absolute;
     top: o;
     z-index: -1;
-    opacity: 0.9;
+    /* opacity: 0.9; */
+    -webkit-animation: 3s ease normal forwards 1 fadein;
+    animation: 3s ease normal forward 1 fadein;
+}
+
+@keyframes fadein {
+    0% { opacity: 0.6; }
+    40% { opacity: 0.7; }
+    60% { opacity: 0.8; }
+    80% { opacity: 0.9; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0.6; }
+    40% { opacity: 0.7; }
+    60% { opacity: 0.8; }
+    80% { opacity: 0.9; }
 }
 
 .main-angel {
@@ -383,10 +399,11 @@ body {
 }
 
 .languages li {
-    /* font-size: .8rem;
-    padding: 0.4rem;
-    text-transform: uppercase; */
+    font-size: 1rem;
+    padding: 0.6rem;
+    text-transform: uppercase;
     display: block;
+    color: #647C28;
 }
 
 .languages li a {
@@ -394,21 +411,15 @@ body {
     text-decoration: none;
 }
 
-.language {
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-}
-
-.languages a:hover,
-.languages a:active {
-    opacity: 0.8;
+.languages li a:hover,
+.languages li a:active {
+    color: #F9F263;
 }
 
 .logo {
     position: absolute;
     text-align: right;
-    width: 25vw;
+    width: 30vw;
     height: auto;
     right: .1rem;
     top: 1.5rem;
@@ -439,7 +450,7 @@ body {
 
 .welcome {
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--grey);
 }
 
@@ -478,7 +489,7 @@ body {
       "p3"
       "p4";
     row-gap: 0.5rem;
-    line-height: 4vh;
+    line-height: 5vh;
 }
 
 .wrapper {
@@ -695,8 +706,8 @@ input[type=checkbox]:checked + label:before {
  }
 
  .go-up {
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 40px;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
@@ -852,14 +863,8 @@ footer p {
     }
 
     .languages li {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 1rem;
-    }
-
-    .language {
-        width: 52px;
-        height: 52px;
-        padding: 5px;
     }
 
     .logo {
@@ -945,7 +950,6 @@ footer p {
     .opinions {
         padding: 15vw;
     }
-
 
     .welcome {
         font-size: 2.5rem;
@@ -1051,7 +1055,8 @@ footer p {
      }
 
      .go-up {
-        width: 60px;
+         width: auto;
+        height: 60px;
     }
 
     footer li {

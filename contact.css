@@ -409,8 +409,8 @@ body {
 }
 
 .go-up {
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 40px;
     margin: 1rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
@@ -844,7 +844,8 @@ footer p {
     }
 
     .go-up {
-        width: 60px;
+        width: auto;
+        height: 60px;
     }
 
     footer li {

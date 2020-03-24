@@ -127,5 +127,14 @@ window.onload = () => {
             modalImg.src = img.src; // data-src=" ... sors do dużego zdjęcia ... "
             captionText.innerHTML = img.alt;
         }
+
+        // window.onclick = function(event) {
+        //     let modal = parent.querySelector(".modal");
+        //     let parent = img.closest('.pic-container');
+        //     if (event.target == modal) {
+        //       modal.style.display = "none";
+        //     }
+        //   } 
     }
+
 }
