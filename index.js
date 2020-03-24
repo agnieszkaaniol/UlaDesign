@@ -12,6 +12,9 @@ window.onload = () => {
         menuFixed = false,
         sidebarNavStatus = false;
 
+        function bgOpacity = 
+        backgroundPic.style.opacity = 0.6;
+
 
     // changing src code
 
@@ -139,27 +142,27 @@ window.onload = () => {
 
     // language hover code
 
-    const langHover = document.querySelectorAll('.languages li');
+    // const langHover = document.querySelectorAll('.languages li');
 
-    for (let lh of langHover) {
-        lh.addEventListener('mouseover', (event) => {
-            setTimeout(() => {
-                event.target.style.color = "grey";
-            }, 70, event);
-        }, false);
+    // for (let lh of langHover) {
+    //     lh.addEventListener('mouseover', (event) => {
+    //         setTimeout(() => {
+    //             event.target.style.color = "grey";
+    //         }, 70, event);
+    //     }, false);
 
-        lh.addEventListener('click', (event) => {
-            setTimeout(() => {
-                event.target.style.color = "black";
-            }, 100, event);
-        }, false);
+    //     lh.addEventListener('click', (event) => {
+    //         setTimeout(() => {
+    //             event.target.style.color = "black";
+    //         }, 100, event);
+    //     }, false);
 
-        lh.addEventListener('mouseout', (event) => {
-            setTimeout(() => {
-                event.target.style.color = "white";
-            }, 100, event);
-        }, false);
-    }
+    //     lh.addEventListener('mouseout', (event) => {
+    //         setTimeout(() => {
+    //             event.target.style.color = "white";
+    //         }, 100, event);
+    //     }, false);
+    // }
 
     // Regulamin modal code
 

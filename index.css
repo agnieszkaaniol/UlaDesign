@@ -383,15 +383,26 @@ body {
 }
 
 .languages li {
-    font-size: .8rem;
+    /* font-size: .8rem;
     padding: 0.4rem;
-    text-transform: uppercase;
+    text-transform: uppercase; */
     display: block;
 }
 
 .languages li a {
     all: unset;
     text-decoration: none;
+}
+
+.language {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+.languages a:hover,
+.languages a:active {
+    opacity: 0.8;
 }
 
 .logo {
@@ -843,6 +854,12 @@ footer p {
     .languages li {
         font-size: 1.3rem;
         padding: 1rem;
+    }
+
+    .language {
+        width: 52px;
+        height: 52px;
+        padding: 5px;
     }
 
     .logo {

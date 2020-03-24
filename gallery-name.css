@@ -333,11 +333,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100vh auto auto auto;
+    grid-template-rows: 100px 100px 130vw auto 10vh auto auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
     "gallery-name"
+    "buttons"
     "space"
     "back"
     "footer";
@@ -345,6 +346,7 @@ body {
 
 .gallery-name {
     width: 100vw;
+    height: 140vw;
 }
 
 .pic-container {
@@ -685,11 +687,12 @@ footer p {
     .container {
         width: 100vw;
         display: grid;
-        grid-template-rows: 100px 100px auto 400px auto auto;
+        grid-template-rows: 100px 100px 100vw auto 10vh auto auto;
         grid-template-areas: 
         "logo-lang"
         "navigation"
         "gallery-name"
+        "buttons"
         "space"
         "back"
         "footer";
