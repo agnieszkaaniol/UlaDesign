@@ -633,7 +633,7 @@ p {
 .go-up {
     width: auto;
     height: 40px;
-    margin: 1rem;
+    margin: .5rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
 
@@ -853,7 +853,7 @@ footer p {
     .go-up {
         width: auto;
         height: 60px;
-        margin: 1rem;
+        margin: 2rem;
         cursor: url('icons/clickgrey.png'), auto;
     }
 
