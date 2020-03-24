@@ -333,7 +333,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 130vw auto 10vh auto auto;
+    grid-template-rows: 100px 100px 140vw auto 10vh auto auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
@@ -687,7 +687,7 @@ footer p {
     .container {
         width: 100vw;
         display: grid;
-        grid-template-rows: 100px 100px 100vw auto 10vh auto auto;
+        grid-template-rows: 100px 100px 100vw 20vh 20vh 20vh auto;
         grid-template-areas: 
         "logo-lang"
         "navigation"
@@ -735,6 +735,12 @@ footer p {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
+    
+.picture {
+    width: 30vw;
+    height: auto;
+}
 
     #pic1 {
         grid-column: 1/2;

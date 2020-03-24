@@ -454,29 +454,9 @@ body {
     text-decoration: none;
 }
 
-.choice,
 .pictures-gallery {
     width: 90vw;
     margin-right: 3rem;
-}
-
-.main-choice-angel {
-    position: relative;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-flow: wrap;
-    align-items: center;
-    margin: auto;
-    justify-content: space-around;
-    cursor: url('icons/clickgrey.png'), auto;
-}
-
-.image-angel {
-    display: block;
-    width: 80vw;
-    height: auto;
-    margin-bottom: 2rem;
 }
 
 .choice-angel-list {
@@ -493,7 +473,7 @@ body {
 }
 
 .angel-name {
-    width: 35vw;
+    width: 40vw;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -507,10 +487,6 @@ body {
     -ms-transition: all .4s;
     transition: all .4s;
     cursor: url('icons/clickgrey.png'), auto;
-}
-  
-.text {
-    opacity: 0;
 }
 
 .go-up {
@@ -585,7 +561,6 @@ footer p {
         top: 1vh;
     }
 
-    .choice,
     .pictures-gallery {
         width: 90vw;
         margin-right: 3rem;
@@ -602,13 +577,6 @@ footer p {
         justify-content: space-around;
     }
 
-     .image-angel {
-        display: block;
-        width: 80vw;
-        height: auto;
-        margin-bottom: 2rem;
-    }
-,
      .choice-angel-list {
         flex-flow: wrap;
         width: 90vw;
@@ -629,42 +597,11 @@ footer p {
       cursor: url('icons/clickgrey.png'), auto;
     }
 
-
-    .choice {
-      margin-left: 4rem;
-    }
-
-    .gallery-choice {
-        display: flex;
-    }
-
-    .main-choice-angel {
-        position: relative;
-        width: 50%;
-        list-style: none;
-    }
-    
-    .image-angel {
-        display: block;
-        width: 40vw;
-        height: auto;
-    }
-
-    .pictures-gallery {
-        margin-left: 3rem;
-    }
-
     .choice-angel-list {
         flex-flow: wrap;
         width: 90vw;
         list-style: none;
         display: flex;
-    }
-
-    .choice-angel {
-       align-items: center;
-       margin: auto;
-       justify-content: space-around;
     }
 
    .angel-name {
@@ -696,6 +633,7 @@ footer p {
         grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
         z-index: 100;
     }
+
     nav ul {
         display: flex;
         width: 100vw;
@@ -704,6 +642,7 @@ footer p {
         background: var(--white);
         padding: 20px;
     }
+
     nav li {
         margin-bottom: 0.1em;
         margin-top: 0.5em;
@@ -711,6 +650,7 @@ footer p {
         margin-left: 1em;
         font-size: 1.3em;
     }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -720,6 +660,7 @@ footer p {
         color: var(--black);
         cursor: url('icons/clickgrey.png'), auto;
     }
+
     nav a::before {
         content: '';
         display: block;
@@ -736,6 +677,7 @@ footer p {
         -o-transition: transform ease-in-out 250ms;
         -ms-transition: transform ease-in-out 250ms;
     }
+    
     nav a:hover::before {
         transform: scale(1, 1);
     }
