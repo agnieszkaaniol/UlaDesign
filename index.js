@@ -12,8 +12,8 @@ window.onload = () => {
         menuFixed = false,
         sidebarNavStatus = false;
 
-        function bgOpacity = 
-        backgroundPic.style.opacity = 0.6;
+        // function bgOpacity = 
+        // backgroundPic.style.opacity = 0.6;
 
 
     // changing src code
