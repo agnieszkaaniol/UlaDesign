@@ -333,7 +333,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 140vw auto 10vh auto auto;
+    grid-template-rows: 100px 1vh 140vw 15vh 15vh 15vh auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
