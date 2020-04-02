@@ -47,6 +47,7 @@ body {
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     cursor: url('icons/cursorgrey.png'), auto;
+    overflow-x: hidden;
 }
 
 .contact_icon {
@@ -334,7 +335,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 80vh auto auto auto;
+    grid-template-rows: 100px 100px 60vw auto auto auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
@@ -475,8 +476,7 @@ body {
     list-style: none;
     display: flex;
     flex-flow: wrap;
-    align-items: center;
-    margin: auto;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -484,6 +484,7 @@ body {
     width: 90vw;
     padding: 1rem;
     padding-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .last-article-pic {
@@ -525,26 +526,41 @@ body {
     opacity: .8;
 }
 
+.line {
+    width: 100vw;
+    height: 1px;
+    background-color: var(--black);
+    margin-bottom: 5rem;
+    margin-left: -4rem;;
+}
+
 .article {
-    padding-bottom: 2rem;
+    height: 40vw;
+    display: grid;
+    grid-template-rows: 30vw 50vw;
+    grid-template-columns: 30vw;
+    grid-template-areas:
+    "article-pic article-text";
 }
 
 .article-pic {
     width: 30vw;
-    height: auto;
+    height: 30vw;
     padding: 1rem;
+    padding-right: 0.2rem;
     padding-bottom: 0;
 }
 
 .article-text {
-    width: 30vw;
+    width: 60vw;
+    height: 30vw;
+    margin-left: 30vw;
+    margin-top: -25vw;
     line-height: 1.2rem;
     overflow: hidden;
     font-size: .9rem;
     color: var(--black);
-    padding: 1rem;
-    padding-top: 0;
-    margin: auto;
+    padding-right: 2rem;
 }
 
  .articles-list a {
@@ -569,6 +585,10 @@ body {
     text-transform: uppercase;
     font-size: 1.1rem;
     color: var(--black);
+}
+
+.back {
+    margin-top: 5rem;
 }
 
 .go-up {
@@ -622,7 +642,7 @@ footer p {
     .container {
         width: 100vw;
         display: grid;
-        grid-template-rows: 100px 100px 200vh auto auto auto;
+        grid-template-rows: 100px 100px 60vw 165vw auto auto;
         grid-template-areas: 
         "logo-lang"
         "navigation"
@@ -720,38 +740,72 @@ footer p {
 
     .last-article {
         width: 90vw;
-        margin: auto;
-        justify-content: center;
-        padding: 2rem;
+        display: grid;
+        grid-template-columns: 35vw 40vw;
+        grid-template-rows: 35vw;
+        grid-template-areas: 
+        "last-article-pic last-article-text";
     }
 
     .last-article-pic {
-        width: 45vw;
+        width: 35vw;
         height: auto;
+        margin-left: 10vw;
     }
     
     .last-article-title {
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2rem;
         color: var(--grey);
     }
     
     .last-article-text {
-        width: 45vw;
-        line-height: 2.5rem;
-        margin: auto;
-        font-size: 1.4rem;
+        width: 30vw;
+        line-height: 1.5rem;
+        margin-left: 45vw;
+        margin-top: -30vw;
+        font-size: 1.2rem;
     }
 
     .articles-list {
         list-style: none;
         display: flex;
         flex-flow: wrap;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
     }
 
    .article {
-       padding: 2rem;
-       padding-bottom: 4rem;
+       /* padding: 0.5rem; */
+       justify-content: space-around;
+       height: 45vw;
+       margin: auto;
+       margin-bottom: 6rem;
+       display: grid;
+       grid-template-columns: 25vw;
+       grid-template-rows: 25vw auto;
+       grid-template-areas: 
+       "article-pic"
+       "article-text";
+   }
+
+   .article a {
+    display: block;
+    text-decoration: none;
+    cursor: url('icons/clickgrey.png'), auto;
+}
+
+   .article a:hover,
+   .article a:active {
+       display: block;
+       transform: scale( 1.1);
+       -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+       -o-transition: all .4s;
+       -ms-transition: all .4s;
+       transition: all .4s;
+       opacity: .8;
    }
     
     .article-pic {
@@ -762,9 +816,10 @@ footer p {
     
     .article-text {
         width: 25vw;
-        line-height: 1.6rem;
-        overflow: hidden;
-        font-size: 1.1rem;
+        height: 25vw;
+        line-height: 1.4rem;
+        overflow-y: auto;
+        font-size: 1rem;
         color: var(--black);
         padding: 1rem;
         margin: auto;
@@ -772,7 +827,7 @@ footer p {
     
     .article-title {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         color: var(--black);
     }
 

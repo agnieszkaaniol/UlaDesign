@@ -47,6 +47,7 @@ body {
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     cursor: url('icons/cursorgrey.png'), auto;
+    overflow-x: hidden;
 }
 
 .contact_icon {
@@ -461,23 +462,25 @@ body {
     background-color: white;
 }
 
-h1 {
-    color: white;
-    font-size: 1.2rem;
-    background-color: grey;
-    text-decoration: none;
+
+
+.line {
+    width: 100vw;
+    height: 1px;
+    background-color: var(--black);
 }
 
-.big-letter {
+.article-title {
     font-family: 'Aurelia';
-    color: white;
-    font-size: 2.5rem;
+    color: var(--black);
+    font-size: 2.2rem;
     padding: .3rem;
-    text-decoration: none;
+    margin-right: 3rem;
 }
 
 article {
     width: 90vw;
+    margin-top: 3rem;
 }
 
 .blog-pic {
@@ -514,36 +517,32 @@ article p a:active {
     font-size: 2rem;
 }
 
-.next-articles-list {
-    list-style: none;
-    display: flex;
-    flex-flow: wrap;
-    margin: auto;
-    justify-content: space-around;
-}
-
 .next-article {
-   margin-bottom: 4rem;
-   margin-top: 4rem;
+    height: 40vw;
+    display: grid;
+    grid-template-rows: 30vw 50vw;
+    grid-template-columns: 30vw;
+    grid-template-areas:
+    "next-article-pic next-article-text";
 }
 
 .next-article-pic {
     width: 30vw;
-    height: auto;
-    line-height: 1.5rem;
+    height: 30vw;
     padding: 1rem;
+    padding-right: 0.2rem;
     padding-bottom: 0;
 }
 
 .next-article-text {
-    width: 30vw;
-    line-height: 1.1rem;
+    width: 60vw;
+    margin-left: 30vw;
+    margin-top: -25vw;
+    line-height: 1.2rem;
     overflow: hidden;
-    font-size: .8rem;
+    font-size: .9rem;
     color: var(--black);
-    padding: 1rem;
-    padding-top: 0;
-    margin: auto;
+    padding-right: 2rem;
 }
 
 .next-articles-list a {
@@ -644,7 +643,7 @@ footer p {
     .container {
         width: 100vw;
         display: grid;
-        grid-template-rows: 100px 100px auto auto auto auto auto;
+        grid-template-rows: 100px 100px auto auto 60vw auto auto;
         grid-template-areas: 
         "logo-lang"
         "navigation"
@@ -737,20 +736,21 @@ footer p {
         color: var(--grey);
     }
 
-    h1 {
-        color: white;
-        font-size: 2rem;
-        background-color: grey;
+    .line {
+        width: 100vw;
+        height: 1px;
+        background-color: var(--black);
     }
     
-    .big-letter {
-        font-family: 'Aurelia';
-        color: white;
+    .article-title {
         font-size: 3rem;
-        padding: .3rem;
+        padding: 1rem;
+        margin: 2rem;
+        margin-right: 5rem;
     }
     
     article {
+        margin-top: 5rem;
         width: 90vw;
     }
     
@@ -771,6 +771,10 @@ footer p {
         margin-right: 3rem;
     }
 
+    .buttons {
+        margin-top: 5rem;
+    }
+
     .go-up,
     .right,
     .come-back,
@@ -783,11 +787,20 @@ footer p {
         list-style: none;
         display: flex;
         flex-flow: wrap;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
     }
     
     .next-article {
-       padding: 2rem;
-       padding-bottom: 4rem;
+        padding: 1rem;
+        padding-bottom: 4rem;
+        display: grid;
+        grid-template-columns: 25vw;
+        grid-template-rows: 25vw auto;
+        grid-template-areas: 
+        "next-article-pic"
+        "next-article-text";
     }
     
     .next-article-pic {
@@ -798,14 +811,14 @@ footer p {
     
     .next-article-text {
         width: 25vw;
-        line-height: 1.6rem;
+        line-height: 1.4rem;
         overflow: hidden;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--black);
-        padding: 1rem;
+        padding: 0.5rem;
         margin: auto;
     }
-    
+ 
     .next-articles-list a {
         text-decoration: none;
         cursor: url('icons/clickgrey.png'), auto;
@@ -813,7 +826,7 @@ footer p {
     
     .next-article-title {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--black);
     }
     
