@@ -345,6 +345,116 @@ body {
     "footer";
 }
 
+.btn-toggle {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    background-image: url(icons/menu1.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    cursor: url('icons/clickgrey.png'), auto;
+    z-index: 1000;
+}
+
+.btn-toggle:hover,
+.btn-toggle:active {
+   opacity: .5;
+}
+
+.navv ul {
+    visibility: hidden;
+}
+
+.nav-sidebar {
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    padding: 0 5px;
+    height: min-content;
+    background-color: rgba(255, 255, 255, .01);
+    z-index: 100;
+}
+
+.nav-sidebar ul {
+    overflow: hidden;
+    visibility: hidden;
+    left: 0;
+}
+
+.nav-sidebar ul li {
+    padding-top: 10px;
+    line-height: 50px;
+    list-style: none;
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+    white-space: nowrap;
+    opacity: 0;
+    cursor: url('icons/clickgrey.png'), auto;
+}
+
+.nav-sidebar ul li a:hover,
+.nav-sidebar ul li a:active {
+    color: var(--grey);
+}
+
+.nav-sidebar a::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--grey);
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    -webkit-transition: transform ease-in-out 250ms;
+    -moz-transition: transform ease-in-out 250ms;
+    -o-transition: transform ease-in-out 250ms;
+    -ms-transition: transform ease-in-out 250ms;
+}
+
+.nav-sidebar a:hover::before,
+.nav-sidebar a:active::before {
+    transform: scale(1, 1);
+}
+
+.logo {
+    position: absolute;
+    width: auto;
+    height: 7vh;
+    right: 3vw;
+    top: 1vh;
+}
+
+.languages {
+    display: flex;
+    list-style: none;
+    text-align: right;
+    justify-content: space-around;
+    position: absolute;
+    cursor: url('icons/clickgrey.png'), auto;
+    z-index: 100;
+}
+
+.languages li {
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.languages li a {
+    all: unset;
+    text-decoration: none;
+}
+
 .gallery-name {
     width: 100vw;
     height: 140vw;
@@ -516,116 +626,6 @@ p {
     cursor: url('icons/clickgrey.png'), auto;
 }
 
-
-.btn-toggle {
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 0;
-    background-image: url(icons/menu1.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
-    cursor: url('icons/clickgrey.png'), auto;
-    z-index: 1000;
-}
-
-.btn-toggle:hover,
-.btn-toggle:active {
-   opacity: .5;
-}
-
-.navv ul {
-    visibility: hidden;
-}
-
-.nav-sidebar {
-    display: flex;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    padding: 0 5px;
-    height: min-content;
-    background-color: rgba(255, 255, 255, .01);
-    z-index: 100;
-}
-
-.nav-sidebar ul {
-    overflow: hidden;
-    visibility: hidden;
-    left: 0;
-}
-
-.nav-sidebar ul li {
-    padding-top: 10px;
-    line-height: 50px;
-    list-style: none;
-}
-
-.nav-sidebar ul li a {
-    display: block;
-    height: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--black);
-    white-space: nowrap;
-    opacity: 0;
-    cursor: url('icons/clickgrey.png'), auto;
-}
-
-.nav-sidebar ul li a:hover,
-.nav-sidebar ul li a:active {
-    color: var(--grey);
-}
-
-.nav-sidebar a::before {
-    content: '';
-    display: block;
-    height: 1px;
-    background: var(--grey);
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-    -webkit-transition: transform ease-in-out 250ms;
-    -moz-transition: transform ease-in-out 250ms;
-    -o-transition: transform ease-in-out 250ms;
-    -ms-transition: transform ease-in-out 250ms;
-}
-
-.nav-sidebar a:hover::before,
-.nav-sidebar a:active::before {
-    transform: scale(1, 1);
-}
-
-.logo {
-    position: absolute;
-    width: auto;
-    height: 7vh;
-    right: 3vw;
-    top: 1vh;
-}
-
-.languages {
-    display: flex;
-    list-style: none;
-    text-align: right;
-    justify-content: space-around;
-    position: absolute;
-    cursor: url('icons/clickgrey.png'), auto;
-    z-index: 100;
-}
-
-.languages li {
-    font-size: 1rem;
-    padding: 1rem;
-    text-transform: uppercase;
-    display: block;
-}
-
-.languages li a {
-    all: unset;
-    text-decoration: none;
-}
 
 .left,
 .right,

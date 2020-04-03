@@ -446,7 +446,7 @@ body {
 }
 
 .languages li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
     text-transform: uppercase;
     display: block;
@@ -527,10 +527,10 @@ body {
 
 .line {
     width: 100vw;
-    height: 1px;
+    height: 0.5px;
     background-color: var(--black);
     margin-bottom: 5rem;
-    margin-left: -4rem;;
+    margin-left: -3rem;
 }
 
 .article {
@@ -552,11 +552,11 @@ body {
 
 .article-text {
     width: 60vw;
-    height: 30vw;
+    height: 25vw;
     margin-left: 30vw;
     margin-top: -25vw;
-    line-height: 1.2rem;
-    overflow: hidden;
+    line-height: 1rem;
+    overflow-y: auto;
     font-size: .9rem;
     color: var(--black);
     padding-right: 2rem;
@@ -582,7 +582,7 @@ body {
 
 .article-title {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--black);
 }
 
