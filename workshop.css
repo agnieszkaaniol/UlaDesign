@@ -50,8 +50,8 @@ body {
 }
 
 .contact_icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     -webkit-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     -moz-transition: all .4s cubic-bezier(.22, .46, .5, .98);
@@ -335,7 +335,7 @@ body {
 .logo {
     position: absolute;
     width: auto;
-    height: 8vh;
+    height: 7vh;
     right: 3vw;
     top: 1vh;
 }
@@ -343,17 +343,16 @@ body {
 .languages {
     display: flex;
     list-style: none;
-    text-align: left;
+    text-align: right;
     justify-content: space-around;
     position: absolute;
     cursor: url('icons/clickgrey.png'), auto;
-    margin-left: 50px;
     z-index: 100;
 }
 
 .languages li {
     font-size: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
     text-transform: uppercase;
     display: block;
 }
@@ -455,8 +454,8 @@ body {
 
 .go-up {
     width: auto;
-    height: 40px;
-    margin: 1rem;
+    height: 35px;
+    margin: 0.4rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
 

@@ -51,8 +51,8 @@ body {
 }
 
 .contact_icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     -webkit-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     -moz-transition: all .4s cubic-bezier(.22, .46, .5, .98);
@@ -430,7 +430,7 @@ body {
 .logo {
     position: absolute;
     width: auto;
-    height: 8vh;
+    height: 7vh;
     right: 3vw;
     top: 1vh;
 }
@@ -438,17 +438,16 @@ body {
 .languages {
     display: flex;
     list-style: none;
-    text-align: left;
+    text-align: right;
     justify-content: space-around;
     position: absolute;
     cursor: url('icons/clickgrey.png'), auto;
-    margin-left: 50px;
     z-index: 100;
 }
 
 .languages li {
     font-size: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
     text-transform: uppercase;
     display: block;
 }
@@ -461,8 +460,6 @@ body {
 .blog-post {
     background-color: white;
 }
-
-
 
 .line {
     width: 100vw;
@@ -536,10 +533,12 @@ article p a:active {
 
 .next-article-text {
     width: 60vw;
+    height: 25vw;
     margin-left: 30vw;
     margin-top: -25vw;
-    line-height: 1.2rem;
-    overflow: hidden;
+    margin-bottom: 1rem;
+    line-height: 1rem;
+    overflow-y: auto;
     font-size: .9rem;
     color: var(--black);
     padding-right: 2rem;
@@ -563,7 +562,7 @@ article p a:active {
 
 .next-article-title {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--black);
 }
 
@@ -586,8 +585,8 @@ article p a:active {
 .right,
 .left {
     width: auto;
-    height: 40px;
-    margin: 1rem;
+    height: 35px;
+    margin: 0.4rem;
     cursor: url('icons/clickgrey.png'), auto;
 }
 
@@ -779,8 +778,8 @@ footer p {
     .right,
     .come-back,
     .left {
-        width: auto;
-        height: 60px;
+        width: 35px;
+        height: auto;
     }
 
     .next-articles-list {
