@@ -435,6 +435,12 @@ body {
     top: 1vh;
 }
 
+.language-container {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+
 .languages {
     display: flex;
     list-style: none;
@@ -446,8 +452,8 @@ body {
 }
 
 .languages li {
-    font-size: 0.8rem;
-    padding: 1rem;
+    font-size: 0.9rem;
+    padding: 0.9rem;
     text-transform: uppercase;
     display: block;
 }
@@ -651,6 +657,11 @@ footer p {
         "blog-articles"
         "back"
         "footer";
+    }
+
+    .language-container {
+        left: -20px;
+        top: 15px;
     }
 
     .languages li {
