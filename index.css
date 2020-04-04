@@ -839,7 +839,7 @@ footer p {
 @media screen and (min-width: 768px) {
 
     body {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .container {
@@ -893,21 +893,24 @@ footer p {
         grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
         z-index: 100;
     }
+
     nav ul {
         display: flex;
         width: 100vw;
         justify-content: space-between;
         list-style: none;
         background: var(--white);
-        padding: 20px;
+        padding: 10px;
     }
+
     nav li {
         margin-bottom: 0.1em;
         margin-top: 0.5em;
-        margin-right: 2em;
+        margin-right: 1em;
         margin-left: 1em;
-        font-size: 1.1em;
+        font-size: 1em;
     }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -917,6 +920,7 @@ footer p {
         color: var(--black);
         cursor: url('icons/clickgrey.png'), auto;
     }
+
     nav a::before {
         content: '';
         display: block;
@@ -933,6 +937,7 @@ footer p {
         -o-transition: transform ease-in-out 250ms;
         -ms-transition: transform ease-in-out 250ms;
     }
+
     nav a:hover::before {
         transform: scale(1, 1);
     }
@@ -950,12 +955,12 @@ footer p {
     }
 
     .welcome {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .subhead::first-letter {
-        font-size: 2rem;
-        line-height: 5vh;
+        font-size: 1.5rem;
+        line-height: 4.5vh;
     }
 
     .subhead::first-letter {
@@ -1004,28 +1009,24 @@ footer p {
     }
 
     .newsletter-form {
-        height: 80%;
-        padding: 6rem;
-    }
-
-    .input-fields {
-        top: 10vh;
+        height: 100%;
+        padding: 7rem;
     }
 
     .input-fields {
         width: 50vw;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .input-fields .input {
-        margin: 20px 20px;
+        margin: 10px 10px;
         padding: 10px;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     input[type=checkbox] + label:before {
-        width: 1.7rem;
-        height: 1.7rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     input[type=checkbox]:checked + label:before {
@@ -1035,7 +1036,7 @@ footer p {
 
     .btn {
         padding: 15px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         width: 15vw;
         border: none;
         margin: auto;
@@ -1053,7 +1054,7 @@ footer p {
      }
 
      .go-up {
-         width: auto;
+        width: auto;
         height: 60px;
     }
 

@@ -695,21 +695,24 @@ footer p {
         grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
         z-index: 100;
     }
+
     nav ul {
         display: flex;
         width: 100vw;
         justify-content: space-between;
         list-style: none;
         background: var(--white);
-        padding: 20px;
+        padding: 10px;
     }
+
     nav li {
         margin-bottom: 0.1em;
         margin-top: 0.5em;
-        margin-right: 2em;
+        margin-right: 1em;
         margin-left: 1em;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -719,6 +722,7 @@ footer p {
         color: var(--black);
         cursor: url('icons/clickgrey.png'), auto;
     }
+
     nav a::before {
         content: '';
         display: block;
@@ -735,6 +739,7 @@ footer p {
         -o-transition: transform ease-in-out 250ms;
         -ms-transition: transform ease-in-out 250ms;
     }
+    
     nav a:hover::before {
         transform: scale(1, 1);
     }

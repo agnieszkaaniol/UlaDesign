@@ -462,20 +462,14 @@ body {
 
 .pictures-gallery {
     width: 90vw;
-    margin-right: 3rem;
+    margin-left: -0.5rem;
 }
 
-.choice-angel-list {
-    flex-flow: wrap;
-    width: 90vw;
+.angel-list {
+    display: grid;
     list-style: none;
-    display: flex;
-}
-
-.choice-angel {
-    align-items: center;
-    margin: auto;
-    justify-content: space-around;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
 }
 
 .angel-name {
@@ -577,42 +571,18 @@ footer p {
         margin-right: 3rem;
     }
 
-    .main-choice-angel {
-        position: relative;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap;
-        align-items: center;
-        margin: auto;
-        justify-content: space-around;
-    }
-
-     .choice-angel-list {
-        flex-flow: wrap;
-        width: 90vw;
-        list-style: none;
-        display: flex;
-    }
-
-     .choice-angel {
+    .choice-angel {
       align-items: center;
       margin: auto;
       justify-content: space-around;
     }
 
-    .angel-name {
-      width: 40vw;
-      height: auto;
-      margin-bottom: 1rem;
-      cursor: url('icons/clickgrey.png'), auto;
-    }
-
-    .choice-angel-list {
+    .angel-list {
         flex-flow: wrap;
         width: 90vw;
         list-style: none;
         display: flex;
+        margin-left: 25px;
     }
 
    .angel-name {
@@ -651,15 +621,15 @@ footer p {
         justify-content: space-between;
         list-style: none;
         background: var(--white);
-        padding: 20px;
+        padding: 10px;
     }
 
     nav li {
         margin-bottom: 0.1em;
         margin-top: 0.5em;
-        margin-right: 2em;
+        margin-right: 1em;
         margin-left: 1em;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     nav a {
