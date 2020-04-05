@@ -476,8 +476,8 @@ body {
 .article-title {
     font-family: 'Aurelia';
     color: var(--black);
-    font-size: 2rem;
-    padding: .3rem;
+    font-size: 1.8rem;
+    padding: .2rem;
     margin-right: 3rem;
 }
 
@@ -488,7 +488,6 @@ article {
 .blog-pic {
     width: 80vw;
     height: auto;
-    margin: auto;
     margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -499,8 +498,7 @@ article p {
     text-align: left;
     line-height: 1.5rem;
     font-size: .9rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
 }
 
 article p a {

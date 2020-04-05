@@ -370,7 +370,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px auto auto auto auto auto;
+    grid-template-rows: 100px 20px auto auto auto auto auto;
     grid-template-areas: 
     "logo-lang"
     "navigation"
@@ -411,6 +411,23 @@ body {
 
 .subhead a:active,
 .subhead a:hover {
+    color: var(--color_blue);
+}
+
+.questions p {
+    width: 70vw;
+    line-height: 1.5rem;
+    margin-left: 5vw;
+}
+
+.questions p a {
+    text-decoration: none;
+    color: var(--grey);
+    cursor: url('icons/clickgrey.png'), auto;
+}
+
+.questions p a:active,
+.questions p a:hover {
     color: var(--color_blue);
 }
 
@@ -555,14 +572,14 @@ input[type=checkbox]:checked + label:before {
 .questions {
     width: 80vw;
     margin: auto;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
-.number {
+/* .number {
     font-family: 'Aurelia';
     font-size: 1.3rem;
     font-weight: bold;
-}
+} */
 
 footer {
     width: 100vw;
