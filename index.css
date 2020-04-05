@@ -520,7 +520,7 @@ body {
 }
 
 .input-fields {
-    width: 60vw;
+    width: 80vw;
     font-size: .8rem;
 }
 
@@ -579,7 +579,7 @@ input[type=checkbox] + label:active:before {
 input[type=checkbox]:checked + label:before {
     background-color: var(--grey);
     color: var(--color_back);
-    font-size: 17px;
+    font-size: 16px;
     padding-bottom: 7px;
 }
 
