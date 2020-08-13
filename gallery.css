@@ -45,7 +45,6 @@ body {
     font-weight: 400;
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    cursor: url('icons/cursorgrey.png'), auto;
     overflow-x: hidden;
 }
 
@@ -58,7 +57,7 @@ body {
     -o-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     -ms-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     transition: all .4s cubic-bezier(.22, .46, .5, .98);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .contact_icon:last-child {
@@ -353,7 +352,7 @@ body {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 1000;
 }
 
@@ -398,7 +397,7 @@ body {
     color: var(--black);
     white-space: nowrap;
     opacity: 0;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .nav-sidebar ul li a:hover,
@@ -444,7 +443,7 @@ body {
     text-align: right;
     justify-content: space-around;
     position: absolute;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 100;
 }
 
@@ -488,14 +487,14 @@ body {
     -o-transition: all .4s;
     -ms-transition: all .4s;
     transition: all .4s;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .go-up {
     width: auto;
     height: 40px;
     margin: 1rem;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .go-up:hover,
@@ -634,6 +633,10 @@ footer p {
         font-size: 1.2em;
     }
 
+    nav li:nth-child(3) > a {
+        color: var(--grey);
+    }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -641,7 +644,7 @@ footer p {
         display: block;
         text-decoration: none;
         color: var(--black);
-        cursor: url('icons/clickgrey.png'), auto;
+        cursor: pointer;
     }
 
     nav a::before {

@@ -46,7 +46,6 @@ body {
     font-weight: 400;
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    cursor: url('icons/cursorgrey.png'), auto;
     overflow-x: hidden;
 }
 
@@ -59,7 +58,7 @@ body {
     -o-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     -ms-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     transition: all .4s cubic-bezier(.22, .46, .5, .98);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .contact_icon:last-child {
@@ -355,7 +354,7 @@ body {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 1000;
 }
 
@@ -400,7 +399,7 @@ body {
     color: var(--black);
     white-space: nowrap;
     opacity: 0;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .nav-sidebar ul li a:hover,
@@ -447,7 +446,7 @@ body {
     text-align: right;
     justify-content: space-around;
     position: absolute;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 100;
 }
 
@@ -463,10 +462,6 @@ body {
     text-decoration: none;
 }
 
-.blog-post {
-    background-color: white;
-}
-
 .line {
     width: 100vw;
     height: 0.5px;
@@ -477,7 +472,6 @@ body {
     font-family: 'Aurelia';
     color: var(--black);
     font-size: 1.8rem;
-    padding: .2rem;
     margin-right: 3rem;
 }
 
@@ -504,7 +498,7 @@ article p {
 article p a {
     text-decoration: none;
     color: var(--grey);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 article p a:hover,
@@ -550,7 +544,7 @@ article p a:active {
 .next-articles-list a {
     display: block;
     text-decoration: none;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .next-articles-list a:hover,
@@ -570,20 +564,6 @@ article p a:active {
     color: var(--black);
 }
 
-.subhead::first-letter {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-}
-
-.subhead::first-letter {
-    -webkit-initial-letter: 3;
-            initial-letter: 3;
-    color: var(--black);
-    font-family: 'Aurelia';
-    font-weight: bold;
-    margin-right: .1rem;
-}
-
 .come-back,
 .go-up,
 .right,
@@ -591,7 +571,7 @@ article p a:active {
     width: auto;
     height: 35px;
     margin: 0.4rem;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .come-back:hover,
@@ -713,6 +693,10 @@ footer p {
         font-size: 1.2em;
     }
 
+    nav li:nth-child(5) > a {
+        color: var(--grey);
+    }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -720,7 +704,7 @@ footer p {
         display: block;
         text-decoration: none;
         color: var(--black);
-        cursor: url('icons/clickgrey.png'), auto;
+        cursor: pointer;
     }
 
     nav a::before {
@@ -834,7 +818,7 @@ footer p {
  
     .next-articles-list a {
         text-decoration: none;
-        cursor: url('icons/clickgrey.png'), auto;
+        cursor: pointer;
     }
     
     .next-article-title {
@@ -842,21 +826,6 @@ footer p {
         font-size: 1.3rem;
         color: var(--black);
     }
-    
-    
-    .subhead::first-letter {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    
-    .subhead::first-letter {
-        -webkit-initial-letter: 3;
-                initial-letter: 3;
-        color: var(--black);
-        font-family: 'Aurelia';
-        font-weight: bold;
-        margin-right: .1rem;
-      }
 
     .contact_icon {
         width: 60px;

@@ -24,29 +24,6 @@ window.onload = () => {
         }, false);
     }
 
-    // const angelPic = document.querySelectorAll('.picture');
-
-    // for (let p of angelPic) {
-    //     p.addEventListener('mouseover', (event) => {
-    //         setTimeout(() => {
-    //             event.target.style.opacity = ".8";
-    //         }, 70);
-    //     }, false);
-
-    //     p.addEventListener('click', (event) => {
-    //         setTimeout(() => {
-    //             event.target.style.height = "100vh";
-    //             event.target.style.width = "100vh";
-    //         }, 100);
-    //     }, false);
-
-    //     p.addEventListener('mouseout', (event) => {
-    //         setTimeout(() => {
-    //             event.target.style.opacity = "1";
-    //         }, 100);
-    //     }, false);
-    // }
-
     window.addEventListener('scroll', (e) => {
         let menu = document.querySelectorAll('.navv')[0],
             logoHeight = document.querySelector('.logo').height,
@@ -129,7 +106,7 @@ window.onload = () => {
         }
 
         window.onclick = function(event) {
-            let myModal = document.getElementById("myModal");;
+            let myModal = document.getElementById("myModal");
             if (event.target == myModal) {
               myModal.style.display = "none";
             }

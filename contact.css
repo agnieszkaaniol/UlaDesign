@@ -45,7 +45,6 @@ body {
     font-weight: 400;
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    cursor: url('icons/cursorgrey.png'), auto;
     overflow-x: hidden;
 }
 
@@ -58,7 +57,7 @@ body {
     -o-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     -ms-transition: all .4s cubic-bezier(.22, .46, .5, .98);
     transition: all .4s cubic-bezier(.22, .46, .5, .98);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .contact_icon:last-child {
@@ -352,7 +351,7 @@ body {
     text-align: right;
     justify-content: space-around;
     position: absolute;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 100;
 }
 
@@ -389,28 +388,14 @@ body {
     line-height: 4vh;
 }
 
-.subhead::first-letter {
-    font-size: 1.3rem;
-    line-height: 4vh;
-}
-
-.subhead::first-letter {
-    -webkit-initial-letter: 3;
-            initial-letter: 3;
-    color: var(--black);
-    font-family: 'Aurelia';
-    font-weight: bold;
-    margin-right: .1rem;
-  }
-
-.subhead a {
+p a {
     text-decoration: none;
     color: var(--grey);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
-.subhead a:active,
-.subhead a:hover {
+p a:active,
+p a:hover {
     color: var(--color_blue);
 }
 
@@ -423,7 +408,7 @@ body {
 .questions p a {
     text-decoration: none;
     color: var(--grey);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .questions p a:active,
@@ -435,7 +420,7 @@ body {
     width: auto;
     height: 35px;
     margin: 0.4rem;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .go-up:hover,
@@ -510,7 +495,7 @@ body {
 
 input[type=checkbox] + label {
     display: block;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -558,7 +543,7 @@ input[type=checkbox]:checked + label:before {
     margin: auto;
     margin-top: 1rem;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .4);
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .btn:active,
@@ -567,6 +552,12 @@ input[type=checkbox]:checked + label:before {
     color: white;
     box-shadow: 0px 3px 6px rgba(255, 255, 255, .4);
     transition: all .3s ease-out .3s;
+}
+
+.welcome {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--grey);
 }
 
 .questions {
@@ -621,7 +612,7 @@ footer p {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
     z-index: 1000;
 }
 
@@ -666,7 +657,7 @@ footer p {
     color: var(--black);
     white-space: nowrap;
     opacity: 0;
-    cursor: url('icons/clickgrey.png'), auto;
+    cursor: pointer;
 }
 
 .nav-sidebar ul li a:hover,
@@ -697,7 +688,6 @@ footer p {
 @media screen and (min-width: 768px) {
     .container {
         width: 100vw;
-        /* margin: 0; */
         display: grid;
         grid-template-rows: 100px 100px auto auto auto auto;
         grid-template-areas: 
@@ -708,6 +698,10 @@ footer p {
         "questions"
         "back"
         "footer";
+    }
+
+    body {
+        font-size: 1.1rem;
     }
 
     .language-container {
@@ -749,6 +743,7 @@ footer p {
         grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
         z-index: 100;
     }
+
     nav ul {
         display: flex;
         width: 100vw;
@@ -757,6 +752,7 @@ footer p {
         background: var(--white);
         padding: 20px;
     }
+
     nav li {
         margin-bottom: 0.1em;
         margin-top: 0.5em;
@@ -764,6 +760,11 @@ footer p {
         margin-left: 1em;
         font-size: 1.1em;
     }
+
+    nav li:nth-child(6) > a {
+        color: var(--grey);
+    }
+
     nav a {
         opacity: 1;
         position: relative;
@@ -771,8 +772,9 @@ footer p {
         display: block;
         text-decoration: none;
         color: var(--black);
-        cursor: url('icons/clickgrey.png'), auto;
+        cursor: pointer;
     }
+
     nav a::before {
         content: '';
         display: block;
@@ -787,7 +789,8 @@ footer p {
         -webkit-transition: transform ease-in-out 250ms;
         -moz-transition: transform ease-in-out 250ms;
         -o-transition: transform ease-in-out 250ms;
-        -ms-transition: transform ease-in-out 250ms;
+        -
+        ms-transition: transform ease-in-out 250ms;
     }
     nav a:hover::before {
         transform: scale(1, 1);
@@ -798,19 +801,8 @@ footer p {
     }
 
     .welcome {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
-
-    .subhead::first-letter {
-        font-size: 2.2rem;
-        line-height: 5.5vh;
-    }
-
-    .subhead::first-letter {
-        -webkit-initial-letter: 3;
-                initial-letter: 3;
-        margin-right: .1rem;
-      }
 
     .wrapper {
           width: 80vw;
